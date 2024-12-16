@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fardeen S Khadri - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #00f2fe;
+        }
+
+        header p {
+            margin: 10px 0 20px;
+            font-size: 1.2em;
+            color: #a0a0a0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            margin: 20px 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00f2fe;
+            color: #121212;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00f2fe;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #00f2fe;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #e0e0e0;
+        }
+
+        .back-to-top {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background-color: #00f2fe;
+            color: #121212;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #4facfe;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fardeen S Khadri</h1>
+            <p>Python Developer | Electronics and Communication Engineer</p>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>VISNAV - Visor Integrated System for Navigation</h3>
+                <p>An innovative solution integrating sensors, augmented reality, and GPS for enhancing motorcycle safety with real-time alerts.</p>
+                <button onclick="toggleDetails('visnav')">Details</button>
+                <div class="details" id="visnav">
+                    <p><strong>Technologies:</strong> ESP32, YOLO v10, Python, Flask, IoT</p>
+                    <p>VISNAV improves rider safety by providing proximity alerts and AR-assisted navigation.</p>
+                </div>
+            </div>
+            <div class="project">
+                <h3>CAKES - Chromosomal Analysis Kit for Efficient Screening</h3>
+                <p>Optimized YOLO algorithm for medical chromosomal analysis, achieving 0.96 confidence level in accurate medical screening.</p>
+                <button onclick="toggleDetails('cakes')">Details</button>
+                <div class="details" id="cakes">
+                    <p><strong>Technologies:</strong> YOLO, Flask, Python, Image Processing</p>
+                    <p>CAKES enhances efficiency in cytogenetics, leveraging machine learning for precise results.</p>
+                </div>
+            </div>
+            <div class="project">
+                <h3>SHOPZEE</h3>
+                <p>A web scraping tool using Python to extract and analyze product reviews from shopping websites for detailed insights.</p>
+                <button onclick="toggleDetails('shopzee')">Details</button>
+                <div class="details" id="shopzee">
+                    <p><strong>Technologies:</strong> BeautifulSoup4, Sentiment Analysis, Prompt Engineering</p>
+                    <p>SHOPZEE enables users to make informed decisions by analyzing sentiment in product reviews.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fardeen S Khadri. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/fardeen-khadri-58a842220" target="_blank">&#x1F465;</a>
+                <a href="https://github.com/fardeenKhadri" target="_blank">&#x1F4BB;</a>
+                <a href="mailto:fardeeinshakhadrii@gmail.com">&#x2709;</a>
+            </div>
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
