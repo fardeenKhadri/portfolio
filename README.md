@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+## 🤖 About Me
 
-## Project info
+I'm **Fardeen S Khadri**, an Electronics & Communication Engineer turned **AI/ML Developer** with a passion for building intelligent systems that drive real-world impact. My work bridges **deep learning**, **natural language processing**, **computer vision**, and **edge AI**, with deployments ranging from **wearable assistive tech** to **medical automation** and **3D spatial intelligence**.
 
-**URL**: https://lovable.dev/projects/1ea7aa69-0341-4e4b-91f9-5369018f04eb
+💡 I don’t just train models — I engineer **end-to-end intelligent systems**, integrating AI pipelines with backend APIs, cloud deployments, and embedded devices.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧠 Core Expertise
 
-**Use Lovable**
+- **AI/ML Engineering**: Transformers, LLMs, CV, RAG, embeddings  
+- **NLP & Speech**: Whisper, Gemini AI, HuggingFace, summarization  
+- **Computer Vision**: Depth estimation, VITs, ESP32-CAM, LGT-Net  
+- **Edge AI**: Real-time inference on microcontrollers and IoT devices  
+- **Deployment**: Flask, REST APIs, Streamlit, Docker, CI/CD
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ea7aa69-0341-4e4b-91f9-5369018f04eb) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Projects at the Intersection of AI & Impact
 
-**Use your preferred IDE**
+- 🧠 **PySummarizer** – RAG/NLP-powered PDF summarization engine  
+- 🦾 **ROBERT** – Vision transformer + haptics for blind assistance  
+- 🏥 **D-BOT** – Multimodal medical assistant using STT + Gemini + Llama 3  
+- 🧭 **ODIN** – Smart wearable glasses for navigation and perception  
+- 🏠 **E`STATE** – 3D room layout predictor using panoramic RGB input
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🏆 Achievements
 
-Follow these steps:
+- **9× Hackathon Winner** – 5× Gold, 3× Runner-up, Best Idea Award  
+- **Published Author** – *VISNAV* in IJIRT Journal  
+- **AI for India Scholar** – Government of India  
+- **Certified** in DevOps, Cloud, Python, AI/ML tools
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📍 Currently Open to:
 
-# Step 3: Install the necessary dependencies.
-npm i
+- AI/ML Research & Engineering Roles  
+- DevOps x AI Integrations  
+- Vision/NLP/LLM freelance/consulting projects
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+📧 [fardeeinshakhadrii@gmail.com](mailto:fardeeinshakhadrii@gmail.com)  
+🔗 [GitHub](https://github.com/fardeenKhadri) | [LinkedIn](https://linkedin.com/in/fardeenkhadri)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1ea7aa69-0341-4e4b-91f9-5369018f04eb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🧬 *“I build intelligent systems — not just models — that solve human problems at scale.”*
