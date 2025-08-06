@@ -67,27 +67,55 @@ const Contact = () => {
             </div>
 
             {/* Quick Actions */}
+            {/* Quick Actions */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Actions</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Button className="bg-gradient-accent border-0 hover:shadow-soft transition-smooth">
-                  <FileText className="w-4 h-4 mr-2" />
-                  Download Resume
+                <Button
+                  asChild
+                  className="bg-gradient-accent border-0 hover:shadow-soft transition-smooth"
+                >
+                  <a href="FARDEEN_S_KHADRI_Resume .pdf" download>
+                    <FileText className="w-4 h-4 mr-2" />
+                    Download Resume
+                  </a>
                 </Button>
-                <Button variant="outline" className="hover:bg-primary/10 transition-smooth">
-                  <Github className="w-4 h-4 mr-2" />
-                  View GitHub
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className="hover:bg-primary/10 transition-smooth"
+                >
+                  <a href="https://github.com/fardeenKhadri" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-4 h-4 mr-2" />
+                    View GitHub
+                  </a>
                 </Button>
-                <Button variant="outline" className="hover:bg-primary/10 transition-smooth">
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn Profile
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className="hover:bg-primary/10 transition-smooth"
+                >
+                  <a href="https://www.linkedin.com/in/fardeenkhadri/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-4 h-4 mr-2" />
+                    LinkedIn Profile
+                  </a>
                 </Button>
-                <Button variant="outline" className="hover:bg-primary/10 transition-smooth">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Email Direct
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className="hover:bg-primary/10 transition-smooth"
+                >
+                  <a href="mailto:fardeeinshakhadrii@gmail.com">
+                    <Mail className="w-4 h-4 mr-2" />
+                    Email Direct
+                  </a>
                 </Button>
               </div>
             </div>
+
 
             {/* Availability Status */}
             <Card className="bg-gradient-card border-0 shadow-card">
@@ -114,32 +142,38 @@ const Contact = () => {
               <CardTitle>Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6">
+              <form 
+                action="https://formsubmit.co/fardeeinshakhadrii@gmail.com" 
+                method="POST" 
+                // encType="text/plain" 
+                className="space-y-6"
+              >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Name</label>
-                    <Input placeholder="Your name" className="border-border" />
+                    <Input name="name" placeholder="Your name" className="border-border" />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Email</label>
-                    <Input type="email" placeholder="Your email" className="border-border" />
+                    <Input name="email" type="email" placeholder="Your email" className="border-border" />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="text-sm font-medium mb-2 block">Subject</label>
-                  <Input placeholder="Subject of your message" className="border-border" />
+                  <Input name="subject" placeholder="Subject of your message" className="border-border" />
                 </div>
-                
+
                 <div>
                   <label className="text-sm font-medium mb-2 block">Message</label>
                   <Textarea 
+                    name="message"
                     placeholder="Tell me about your project or opportunity..." 
                     rows={6}
                     className="border-border resize-none"
                   />
                 </div>
-                
+
                 <Button 
                   type="submit" 
                   size="lg" 
@@ -149,6 +183,7 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
+
             </CardContent>
           </Card>
         </div>
@@ -182,6 +217,7 @@ const Contact = () => {
             </Card>
 
             {/* Publication */}
+
             <Card className="bg-gradient-card border-0 shadow-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -194,13 +230,25 @@ const Contact = () => {
                   <div className="text-sm text-muted-foreground">
                     Published in International Journal of Innovative Research in Technology (IJIRT), Volume 11, Issue 12
                   </div>
-                  <Button variant="outline" size="sm" className="hover:bg-primary/10 transition-smooth">
-                    <FileText className="w-4 h-4 mr-2" />
-                    Read Publication
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="sm"
+                    className="hover:bg-primary/10 transition-smooth"
+                  >
+                    <a
+                      href="https://ijirt.org/publishedpaper/IJIRT168252_PAPER.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FileText className="w-4 h-4 mr-2" />
+                      Read Publication
+                    </a>
                   </Button>
                 </div>
               </CardContent>
             </Card>
+
           </div>
         </div>
       </div>

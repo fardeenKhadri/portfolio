@@ -15,6 +15,28 @@ const skillCategories = [
       { name: "SQL", level: 80, color: "primary" }
     ]
   },
+    {
+    title: "AI & Machine Learning",
+    icon: Brain,
+    skills: [
+      { name: "TensorFlow", level: 90, color: "primary" },
+      { name: "PyTorch", level: 85, color: "accent" },
+      { name: "OpenCV", level: 92, color: "primary" },
+      { name: "HuggingFace", level: 88, color: "accent" },
+      { name: "Scikit-learn", level: 85, color: "primary" }
+    ]
+  },
+    {
+    title: "Frameworks & Libraries",
+    icon: Database,
+    skills: [
+      { name: "Flask", level: 90, color: "primary" },
+      { name: "Pandas", level: 88, color: "accent" },
+      { name: "NumPy", level: 90, color: "primary" },
+      { name: "Selenium", level: 85, color: "accent" },
+      { name: "REST APIs", level: 87, color: "primary" }
+    ]
+  },
   {
     title: "DevOps & Cloud",
     icon: Cloud,
@@ -26,17 +48,7 @@ const skillCategories = [
       { name: "Azure", level: 75, color: "primary" }
     ]
   },
-  {
-    title: "AI & Machine Learning",
-    icon: Brain,
-    skills: [
-      { name: "TensorFlow", level: 90, color: "primary" },
-      { name: "PyTorch", level: 85, color: "accent" },
-      { name: "OpenCV", level: 92, color: "primary" },
-      { name: "HuggingFace", level: 88, color: "accent" },
-      { name: "Scikit-learn", level: 85, color: "primary" }
-    ]
-  },
+
   {
     title: "IoT & Embedded",
     icon: Cpu,
@@ -48,17 +60,7 @@ const skillCategories = [
       { name: "Assembly", level: 80, color: "primary" }
     ]
   },
-  {
-    title: "Frameworks & Libraries",
-    icon: Database,
-    skills: [
-      { name: "Flask", level: 90, color: "primary" },
-      { name: "Pandas", level: 88, color: "accent" },
-      { name: "NumPy", level: 90, color: "primary" },
-      { name: "Selenium", level: 85, color: "accent" },
-      { name: "REST APIs", level: 87, color: "primary" }
-    ]
-  },
+
   {
     title: "Operating Systems",
     icon: Shield,

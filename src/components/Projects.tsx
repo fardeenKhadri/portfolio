@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Lightbulb } from "lucide-react";
+import { sourceMapsEnabled } from "process";
 
 const projects = [
   {
@@ -9,35 +10,42 @@ const projects = [
     description: "Python NLP library for PDF summarization using extractive/abstractive methods, integrated with Flask and transformers.",
     tech: ["Python", "RAG", "NLP", "HuggingFace", "Flask", "PDF Parsing"],
     category: "AI/ML",
-    featured: true
+    featured: true,
+    sourceLink: "https://github.com/fardeenKhadri/pysuma.git"
   },
   {
     title: "Optical Device for Intelligent Navigation",
     description: "Smart glasses for visually impaired individuals using ESP32-CAM, voice assistant, and AI-based scene interpretation.",
     tech: ["ESP32-CAM", "Image Processing", "Audio Streaming", "Flask"],
     category: "IoT/Embedded",
-    featured: true
+    featured: true,
+    sourceLink: "https://github.com/fardeenKhadri/Odin.git"
   },
+
   {
-    title: "VISNAV – Smart Helmet Visor System",
-    description: "Helmet with real-time object detection using YOLOv10 and ESP32, with AR overlays, GPS, crash detection, and alerting.",
-    tech: ["ESP32", "YOLOv10", "Python", "IoT", "Image Processing"],
-    category: "Computer Vision",
-    featured: true
-  },
-  {
-    title: "Haptic Wearable Navigation System",
+    title: "Dynamic AI for Real-Time Sight, Haptic and Navigation Assistance",
     description: "Wearable for blind users with depth sensing, haptics, and conversational AI powered by vision transformers.",
     tech: ["Depth Estimation", "Vision Transformers", "Embedded Systems"],
-    category: "Accessibility",
-    featured: false
+    category: "AI/ML & IOT",
+    featured: true,
+    sourceLink : "https://github.com/fardeenKhadri/R.O.B.E.R.T.git"
   },
   {
-    title: "OROCHI – Smart Presence Detection",
-    description: "Real-time human presence detection using mmWave radar and LSTM for smart energy-efficient spaces.",
-    tech: ["24GHz mmWave Radar", "ESP32", "Gesture Recognition", "LSTM"],
-    category: "IoT/AI",
-    featured: false
+    title: "Doctor's Bot for Operational Trackers Technology",
+    description: "AI-powered medical assistant that records, summarizes, and retrieves patient data using speech-to-text, Gemini AI, and Llama 3.",
+    tech: ["Flask", "Python", "Whisper", "Gemini AI", "Llama 3", "Speech-to-Text", "Bootstrap", "CSV Storage"],
+    category: "AI/Healthcare",
+    featured: false,
+    sourceLink: "https://github.com/fardeenKhadri/D-BOTT"
+  },
+
+  {
+    title: "E`STATE: AI-Powered 3D Room Layout Predictor",
+     description: "Transforms RGB panoramas into 3D room layouts using LGT-Net. Features Streamlit & Gradio interfaces, REST API, and multi-format export.",
+    tech: ["Python", "LGT-Net", "Transformers", "3D Modeling", "Gradio", "Streamlit", "Flask", "REST API"],
+    category: "AI",
+    featured: false,
+    sourceLink: "https://github.com/fardeenKhadri/mestri"
   }
 ];
 
@@ -108,40 +116,25 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
-
                 {/* Action Buttons */}
-                <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    className="bg-gradient-accent border-0 hover:shadow-soft transition-smooth"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="hover:bg-primary/10 transition-smooth"
-                  >
+              <div className="flex gap-3">
+                <Button 
+                  asChild
+                  variant="outline" 
+                  size="sm"
+                  className="hover:bg-primary/10 transition-smooth"
+                >
+                  <a href={project.sourceLink} target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4 mr-2" />
                     Source
-                  </Button>
-                </div>
+                  </a>
+                </Button>
+                
+              </div>
+
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* View More Projects Button */}
-        <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="hover:bg-primary/10 hover:shadow-soft transition-smooth"
-          >
-            View All Projects
-            <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
         </div>
       </div>
     </section>

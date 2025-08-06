@@ -12,7 +12,7 @@ const experiences = [
       "Built VR-based research applications and custom Brachiograph systems",
       "Developed Python-based configuration workflows for real-time data visualization"
     ],
-    type: "Full-time",
+    type: "Internship",
     color: "primary"
   },
   {
