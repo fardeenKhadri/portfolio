@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-            Electronics & Communication Engineer | AI/ML Enthusiast | Software Developer
+            Electronics & Communication Engineer | AI/ML Enthusiast | Prompt Engineer | Software Developer
           </p>
 
           {/* Professional Summary */}
