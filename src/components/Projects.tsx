@@ -6,11 +6,19 @@ import { sourceMapsEnabled } from "process";
 
 const projects = [
   {
+    title: "Real-time AI Health Assistant",
+    description: "Architected a high-performance conversational AI for MantraCare utilizing OpenAI's Realtime API and Gemini 2.0. Integrated medical trackers and MCP servers for live health insights.",
+    tech: ["OpenAI Realtime", "Gemini 2.0", "FastAPI", "Docker", "PostgreSQL", "MCP"],
+    category: "AI/Healthcare",
+    featured: true,
+    sourceLink: "https://github.com/fardeenKhadri"
+  },
+  {
     title: "PySummarizer",
     description: "Python NLP library for PDF summarization using extractive/abstractive methods, integrated with Flask and transformers.",
     tech: ["Python", "RAG", "NLP", "HuggingFace", "Flask", "PDF Parsing"],
     category: "AI/ML",
-    featured: true,
+    featured: false,
     sourceLink: "https://github.com/fardeenKhadri/pysuma.git"
   },
   {
@@ -28,7 +36,7 @@ const projects = [
     tech: ["Depth Estimation", "Vision Transformers", "Embedded Systems"],
     category: "AI/ML & IOT",
     featured: true,
-    sourceLink : "https://github.com/fardeenKhadri/R.O.B.E.R.T.git"
+    sourceLink: "https://github.com/fardeenKhadri/R.O.B.E.R.T.git"
   },
   {
     title: "Doctor's Bot for Operational Trackers Technology",
@@ -41,7 +49,7 @@ const projects = [
 
   {
     title: "E`STATE: AI-Powered 3D Room Layout Predictor",
-     description: "Transforms RGB panoramas into 3D room layouts using LGT-Net. Features Streamlit & Gradio interfaces, REST API, and multi-format export.",
+    description: "Transforms RGB panoramas into 3D room layouts using LGT-Net. Features Streamlit & Gradio interfaces, REST API, and multi-format export.",
     tech: ["Python", "LGT-Net", "Transformers", "3D Modeling", "Gradio", "Streamlit", "Flask", "REST API"],
     category: "AI",
     featured: false,
@@ -65,11 +73,10 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <Card 
-              key={index} 
-              className={`group bg-gradient-card border-0 shadow-card hover:shadow-glow transition-smooth relative overflow-hidden ${
-                project.featured ? 'lg:col-span-2' : ''
-              }`}
+            <Card
+              key={index}
+              className={`group bg-gradient-card border-0 shadow-card hover:shadow-glow transition-smooth relative overflow-hidden ${project.featured ? 'lg:col-span-2' : ''
+                }`}
             >
               {/* Featured Badge */}
               {project.featured && (
@@ -107,9 +114,9 @@ const Projects = () => {
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, i) => (
-                    <Badge 
-                      key={i} 
-                      variant="outline" 
+                    <Badge
+                      key={i}
+                      variant="outline"
                       className="text-xs hover:bg-primary/10 transition-smooth"
                     >
                       {tech}
@@ -117,20 +124,20 @@ const Projects = () => {
                   ))}
                 </div>
                 {/* Action Buttons */}
-              <div className="flex gap-3">
-                <Button 
-                  asChild
-                  variant="outline" 
-                  size="sm"
-                  className="hover:bg-primary/10 transition-smooth"
-                >
-                  <a href={project.sourceLink} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-4 h-4 mr-2" />
-                    Source
-                  </a>
-                </Button>
-                
-              </div>
+                <div className="flex gap-3">
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="sm"
+                    className="hover:bg-primary/10 transition-smooth"
+                  >
+                    <a href={project.sourceLink} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      Source
+                    </a>
+                  </Button>
+
+                </div>
 
               </CardContent>
             </Card>

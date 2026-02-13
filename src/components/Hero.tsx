@@ -7,13 +7,13 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-accent/90" />
       </div>
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-glow/20 rounded-full blur-3xl animate-pulse" />
@@ -41,33 +41,33 @@ const Hero = () => {
           {/* Professional Summary */}
           <div className="max-w-3xl mx-auto mb-10">
             <p className="text-lg text-white/80 leading-relaxed">
-              Results-driven graduate specializing in software development, AI/ML embedded systems, and DevOps. 
-              Passionate about automation, optimization, and cross-disciplinary innovation with expertise 
-              in Python, CI/CD, and cloud technologies.
+              Currently an AI Developer Intern at MantraCare, ecializing in advanced conversational AI, LLM integration, and health-tech systems.
+              Results-driven graduate with expertise in Python, CI/CD, and cloud technologies, passionate about automating and optimizing
+              cross-disciplinary innovations.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button 
+            <Button
               asChild
-              size="lg" 
+              size="lg"
               className="bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 transition-smooth shadow-glow"
             >
               <a href="mailto:fardeeinshakhadrii@gmail.com">
-              <Mail className="w-5 h-5 mr-2" />
-              Get In Touch
+                <Mail className="w-5 h-5 mr-2" />
+                Get In Touch
               </a>
             </Button>
-            <Button 
+            <Button
               asChild
-              variant="outline" 
-              size="lg" 
+              variant="outline"
+              size="lg"
               className="border-white/50 text-white bg-white/10 hover:bg-white/20 transition-smooth"
             >
               <a href="FARDEEN_S_KHADRI_Resume .pdf">
-              <Download className="w-5 h-5 mr-2" />
-              Download Resume
+                <Download className="w-5 h-5 mr-2" />
+                Download Resume
               </a>
             </Button>
           </div>

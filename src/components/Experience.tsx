@@ -4,16 +4,30 @@ import { Briefcase, MapPin, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    title: "AI Developer Intern",
+    company: "MantraCare",
+    location: "Delhi",
+    period: "2025-Present",
+    description: [
+      "Integrated OpenAI's Realtime API and Gemini 2.0 models for advanced conversational health AI",
+      "Developed vector-based movement detection for physical therapy using 3D coordinate processing",
+      "Architected and deployed MCP (Model Context Protocol) servers using Docker and FastAPI",
+      "Optimized PostgreSQL databases and orchestrated high-frequency health tracker data migrations"
+    ],
+    type: "Internship",
+    color: "primary"
+  },
+  {
     title: "Software Developer",
     company: "Indian Institute of Science (IISc)",
     location: "Bangalore",
-    period: "Current",
+    period: "2024-2025",
     description: [
       "Built VR-based research applications and custom Brachiograph systems",
       "Developed Python-based configuration workflows for real-time data visualization"
     ],
     type: "Internship",
-    color: "primary"
+    color: "accent"
   },
   {
     title: "DevOps Engineer",
