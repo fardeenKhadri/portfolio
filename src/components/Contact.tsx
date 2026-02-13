@@ -121,16 +121,16 @@ const Contact = () => {
             <Card className="bg-gradient-card border-0 shadow-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+                  <div className="w-3 h-3 rounded-full bg-blue-500" />
                   Current Status
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <Badge className="bg-green-500/20 text-green-700 mb-3">
-                  🟢 Available for Opportunities
+                <Badge className="bg-blue-500/20 text-blue-400 mb-3">
+                  💼 Currently Employed @ MantraCare
                 </Badge>
                 <p className="text-sm text-muted-foreground">
-                  Actively seeking Software Configuration Engineer roles and open to freelance projects in DevOps, AI/ML, and embedded systems.
+                  Focused on building advanced conversational AI and health-tech systems. Not currently seeking new opportunities.
                 </p>
               </CardContent>
             </Card>
@@ -142,9 +142,9 @@ const Contact = () => {
               <CardTitle>Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form 
-                action="https://formsubmit.co/fardeeinshakhadrii@gmail.com" 
-                method="POST" 
+              <form
+                action="https://formsubmit.co/fardeeinshakhadrii@gmail.com"
+                method="POST"
                 // encType="text/plain" 
                 className="space-y-6"
               >
@@ -166,17 +166,17 @@ const Contact = () => {
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Message</label>
-                  <Textarea 
+                  <Textarea
                     name="message"
-                    placeholder="Tell me about your project or opportunity..." 
+                    placeholder="Tell me about your project or opportunity..."
                     rows={6}
                     className="border-border resize-none"
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  size="lg" 
+                <Button
+                  type="submit"
+                  size="lg"
                   className="w-full bg-gradient-accent border-0 hover:shadow-soft transition-smooth"
                 >
                   <Send className="w-4 h-4 mr-2" />

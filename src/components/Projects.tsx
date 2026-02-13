@@ -18,7 +18,7 @@ const projects = [
     description: "Python NLP library for PDF summarization using extractive/abstractive methods, integrated with Flask and transformers.",
     tech: ["Python", "RAG", "NLP", "HuggingFace", "Flask", "PDF Parsing"],
     category: "AI/ML",
-    featured: false,
+    featured: true,
     sourceLink: "https://github.com/fardeenKhadri/pysuma.git"
   },
   {

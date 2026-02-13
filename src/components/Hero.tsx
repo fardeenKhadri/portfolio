@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Status Badge */}
           <Badge variant="outline" className="mb-6 border-white/30 text-white hover:bg-white/10 transition-smooth">
-            🚀 Available for Opportunities
+            💼 Currently Employed @ MantraCare
           </Badge>
 
           {/* Main Heading */}
@@ -41,7 +41,7 @@ const Hero = () => {
           {/* Professional Summary */}
           <div className="max-w-3xl mx-auto mb-10">
             <p className="text-lg text-white/80 leading-relaxed">
-              Currently an AI Developer Intern at MantraCare, ecializing in advanced conversational AI, LLM integration, and health-tech systems.
+              Currently an AI Developer Intern at MantraCare, specializing in advanced conversational AI, LLM integration, and health-tech systems.
               Results-driven graduate with expertise in Python, CI/CD, and cloud technologies, passionate about automating and optimizing
               cross-disciplinary innovations.
             </p>
